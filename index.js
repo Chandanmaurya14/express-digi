@@ -45,6 +45,11 @@ app.put("/teas/:id", (req, res) => {
   res.send(200).send(tea);
 });
 
+// default route
+app.get("/", (req, res) => {
+  res.send("Welcome to the Tea API");
+});
+
 // delete
 
 app.delete("/teas/:id", (req, res) => {
